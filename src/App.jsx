@@ -18,6 +18,7 @@ function App() {
   // }, []); //cuando la dependencia ( [] ) esta vacía se ejecuta solo una vez
 
 
+  // guarda los datos el en localStorage
   useEffect(()=> {
     localStorage.setItem("pacientes", JSON.stringify(pacientes));
   },[pacientes])
